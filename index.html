@@ -11,6 +11,16 @@
       crossorigin="anonymous"
     />
     <title>Straight From The Frontline</title>
+    <style>
+      body{
+        background-color: #333;
+        color: #fff;
+      }
+      .card{
+        background-color: transparent;
+        border-radius: 1rem;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -35,29 +45,39 @@
           international content distribution.
         </li>
       </ul>
-      <div class="card">
-        <a href="https://gofund.me/73b33f7f">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/4/4a/GoFundMe_logo.svg"
-            class="card-img-top"
-            alt="..."
-          />
-        </a>
-        <div class="card-body">
-          <h5 class="card-title">DONATE HERE</h5>
-          <p class="card-text">Go Fund Me (Opens in new window)</p>
-          <a href="https://gofund.me/73b33f7f" class="btn btn-primary"
-            >Go to GoFundMe</a
-          >
-        </div>
-      </div>
-      <div class="card">
-        <img src="./img/share.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">SPREAD THE WORD</h5>
-          <p class="card-text">Insta: @StraightFromTheFrontline</p>
-          <p class="card-text">Twitter: @sftFrontline</p>
-        </div>
+      <div class="card-group">
+          <div class="card col-sm-4 border-white p-3">
+            <a href="https://gofund.me/73b33f7f" class="h-50" target="blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/GoFundMe_logo.svg" class="card-img-top w-50 m-auto" alt="..." />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">DONATE HERE</h5>
+              <p class="card-text">Donate via Go Fund Me</p>
+              <a href="https://gofund.me/73b33f7f" target="blank" class="btn btn-primary">GoFundMe</a>
+            </div>
+          </div>
+          <div class="card col-sm-4  border-white p-3">
+            <a href="https://www.instagram.com/StraightFromTheFrontline/" class="h-50" target="blank">
+              <img src="./img/instagram.png" class="card-img-top" style="margin: auto; width: 100px;" alt="..." />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">SPREAD THE WORD</h5>
+              <p class="card-text">
+                Twitter: <a href="https://www.twitter.com/sftFrontline/" target="blank" class="btn btn-primary">@sftFrontline</a>
+              </p>
+            </div>
+          </div>
+          <div class="card col-sm-4  border-white p-3">
+            <a href="https://www.twitter.com/sftFrontline/" class="h-50" target="blank">
+              <img src="./img/twitter.png" class="card-img-top" style="margin: auto; width: 100px;" alt="..." />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">SPREAD THE WORD</h5>
+              <p class="card-text">
+                Twitter: <a href="https://www.twitter.com/sftFrontline/" target="blank" class="btn btn-primary">@sftFrontline</a>
+              </p>
+            </div>
+          </div>
       </div>
     </div>
   </body>

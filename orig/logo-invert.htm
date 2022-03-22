@@ -24,11 +24,18 @@
     .bg{
       background-color: white;
     }
+    svg:hover #logo-bg{
+      transform: rotate(60deg);
+      transition: all 0.5s;
+      fill: #FFF;
+      left: 50px;
+   }
   </style>
-  <text x="10" y="50" class="text" fill="black">S&nbsp; F</text>
-  <rect x="10" y="60" width="80" height="12" style="fill:black;" />
-  <text x="15" y="71" class="text sm" fill="white">FRONTLINE</text>
-  <text x="10" y="120" class="text" fill="black">T&nbsp; F</text>
+  <rect x="0" id="logo-bg" y="0" fill="black" width="100" height="130" />
+  <text x="10" id="sf" y="50" class="text" fill="black">S&nbsp; F</text>
+  <rect x="10" id="rect" y="60" width="80" height="12" style="fill:black;" />
+  <text x="15" id="front" y="71" class="text sm" fill="white">FRONTLINE</text>
+  <text x="10" id="tf" y="120" class="text" fill="black">T&nbsp; F</text>
 </svg>
 </body>
 </html>

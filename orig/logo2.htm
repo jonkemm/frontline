@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFTF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+    <svg width="100" height="130" id="svg">
+        <style>
+        .text{
+            font-family: "Kumbh Sans";
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .sm{
+            font-size: 12px;
+        }
+
+        #bg{
+            width: 100px;
+            height: 130px;
+        }
+        #bob{
+            width: 80px;
+            height: 12px;
+            animation-name: slide;
+            animation-duration: 4s;
+        }
+        svg{
+            background-color: blue;
+        }
+        </style>
+        <rect id="bg" fill="black" x="0" y="0"/>
+        <text x="10" id="sf" y="0" class="text" fill="white">S&nbsp; F</text>
+        <text x="10" id="tf" y="190" class="text" fill="white">T&nbsp; F</text>
+        <rect id="bob" x="-80" y="60" fill="white" />
+        <text x="15" id="frontline" y="71" class="text sm" fill="black">FRONTLINE</text>
+        <animate xlink:href="#tf" attributeName="y"from="190" to="120" dur="0.25s" begin="rect-anim.begin + 0.5s" fill="freeze" id="text-tf-anim" />
+        <animate xlink:href="#sf" attributeName="y" from="0" to="50" dur="0.25s" begin="rect-anim.begin + 0.5s" fill="freeze" id="text-sf-anim" />
+        <animate xlink:href="#bob" attributeName="x" from="-80" to="10" dur="0.5s" begin="svg-anim.begin + 0s" fill="freeze" id="rect-anim" />
+        <animate xlink:href="#svg" attributeName="x" from="0" to="0" dur="0s" begin="0s" id="svg-anim" />
+    </svg>
+</body>
+</html>
